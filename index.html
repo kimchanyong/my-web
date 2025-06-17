@@ -1,66 +1,671 @@
-
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>모바일 반응형 웹 - 시(詩) 예제</title>
-  <!-- 모바일 반응형을 위한 viewport 설정 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: '맑은 고딕', sans-serif;
-      background: #f2f6fa;
-    }
-    .poem-container {
-      max-width: 600px;
-      margin: 40px auto;
-      background: linear-gradient(135deg, #b7eaff 0%, #ffdee9 100%);
-      border-radius: 20px;
-      padding: 32px 20px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.1);
-      color: #343a40;
-      text-align: center;
-      transition: background 0.3s;
-    }
-    .poem-title {
-      font-size: 1.7rem;
-      font-weight: bold;
-      margin-bottom: 24px;
-      color: #3677eb;
-      letter-spacing: 0.05em;
-    }
-    .poem-author {
-      margin-top: 24px;
-      font-size: 1.1rem;
-      color: #888;
-      font-style: italic;
-    }
-    @media (max-width: 480px) {
-      .poem-container {
-        padding: 20px 8px;
-        font-size: 1.04rem;
-      }
-      .poem-title {
-        font-size: 1.22rem;
-      }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>히가시노 게이고 온라인 기획전</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: 히가시노 게이고 온라인 기획전
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+
 <body>
-  <div class="poem-container">
-    <div class="poem-title">풀꽃</div>
-    <div>
-      <p>
-        자세히 보아야<br>
-        예쁘다<br>
-        오래 보아야<br>
-        사랑스럽다<br>
-        너도 그렇다
-      </p>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      <!-- Uncomment below if you prefer to use an text logo -->
+      <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link  scrollto" href="#portfolio">Works</a></li>
+          <li><a class="nav-link  scrollto" href="#journal">Series</a></li>
+          <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="category.html"><span>인기작</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="category.html">용의자 x의 헌신</a></li>
+                  <li><a href="category.html">백야행</a></li>
+                  <li><a href="category.html">나미야 잡화점의 기적</a></li>
+                  <li><a href="category.html">악의</a></li>
+                  <li><a href="category.html">매스커레이드 호텔</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="category.html"><span>감성 미스터리</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="category.html">비밀</a></li>
+                  <li><a href="category.html">신참자</a></li>
+                  <li><a href="category.html">나미야 잡화점의 기적</a></li>
+                  <li><a href="category.html">한여름의 방정식</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="category.html"><span>극적반전</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="category.html">붉은 손가락</a></li>
+                  <li><a href="category.html">백야행</a></li>
+                  <li><a href="category.html">성녀의 구제</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="category.html"><span>드라마화</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="category.html">용의자 x의 헌신</a></li>
+                  <li><a href="category.html">매스커레이드 호텔</a></li>
+                  <li><a href="category.html">기린의 날개</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#history">Histoy</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Behind</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
     </div>
-    <div class="poem-author">- 나태주</div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="home">
+
+    <div class="container">
+      <div class="hero-content">
+        <h1>I'm &nbsp;&nbsp;&nbsp;<span class="typed" data-typed-items="히가시노 게이고, 東野 圭吾, ひがしの けいご, Higashino Keigo"></span></h1>
+        <p>Famous Prolific Japanese Novelist</p>
+
+      </div>
+    </div>
+  </div><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <div id="about" class="paddsection">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-4 ">
+            <div class="div-img-bg">
+              <div class="about-img">
+                <img src="assets/img/me.jpg" class="img-responsive" alt="me">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="about-descr">
+
+              <p class="p-heading">I'm a Japanese novelist based in Tokyo,</p>              
+              <p class="p-heading">best known for crafting intricate mysteries</p>              
+              <p class="p-heading">with emotional depth and sharp social insight.</p>
+              <p class="separator">With a background in engineering, I enjoy blending logic and humanity in every story I write. My works often explore crime, morality, and the unseen sides of ordinary people.
+I’m the author of The Devotion of Suspect X, Malice, and the Detective Galileo and Kyoichiro Kaga series — stories that have been adapted into films and loved by readers around the world.</p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <div id="services">
+      <div class="container">
+
+        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/recent/녹나무의 여신.jpg" alt="녹나무의 여신" style="width: 80px; height: auto; margin-bottom: 10px;" />
+                <span>녹나무의 여신</span>
+                <p class="separator">최신작 2024년 5월 23일 </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/recent/당신이 누군가를 죽였다.jpg" alt="당신이 누군가를 죽였다" style="width: 80px; height: auto; margin-bottom: 10px;" />
+                <span>당신이 누군가를 죽였다</span>
+                <p class="separator">최신작 2024년 7월 23일 </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/recent/비정근.jpg" alt="비정근" style="width: 80px; height: auto; margin-bottom: 10px;" />
+                <span>비정근</span>
+                <p class="separator">최신작 2024년 12월 24일 </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/recent/아름답고 위험한 이름, 비너스.jpg" alt="아름답고 위험한 이름, 비너스" style="width: 80px; height: auto; margin-bottom: 10px;" />
+                <span>아름답고 위험한 이름, 비너스</span>
+                <p class="separator">최신작 2024년 7월 30일 </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/recent/침묵의 퍼레이드.jpg" alt="침묵의 퍼레이드" style="width: 80px; height: auto; margin-bottom: 10px;" />
+                <span>침묵의 퍼레이드</span>
+                <p class="separator">최신작 2025년 3월 7일 </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/recent/히가시노 게이고의 무한도전.jpg" alt="히가시노 게이고의 무한도전" style="width: 80px; height: auto; margin-bottom: 10px;" />
+                <span>히가시노 게이고의 무한도전</span>
+                <p class="separator">최신작 2025년 2월 21일 </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- End Services Section -->
+
+    <!-- ======= Works Section ======= -->
+    <div id="portfolio" class="paddsection">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Works</h2>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">전체</li>
+              <li data-filter=".filter-app">본격추리</li>
+              <li data-filter=".filter-card">사회파</li>
+              <li data-filter=".filter-web">감성</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/works/본격 추리/용의자 x의 헌신.jpg" class="img-fluid" alt="" style="display: block; margin: 0 auto;">
+            <div class="portfolio-info">
+              <h4>용의자 x의 헌신</h4>
+              <p>물리적 트릭 & 감정적 반전</p>
+              <p>갈릴레오 시리즈</p>
+              <a href="assets/img/works/본격 추리/용의자 x의 헌신.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="용의자 x의 헌신"><i class="bx bx-plus"></i></a>
+              <a href="https://product.kyobobook.co.kr/detail/S000001461135" class="details-link" title="More Details"><target="_blank"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/works/본격 추리/한여름의 방정식.jpg" class="img-fluid" alt="" style="display: block; margin: 0 auto;">
+            <div class="portfolio-info">
+              <h4>한여름의 방정식</h4>
+              <p>과학 트릭</p>
+              <p>교묘한 환경 트릭</p>
+              <a href="assets/img/works/본격 추리/한여름의 방정식.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="한여름의 방정식"><i class="bx bx-plus"></i></a>
+              <a href="https://product.kyobobook.co.kr/detail/S000001461121 " class="details-link" title="More Details"><i class="bx bx-link"><target="_blank"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/works/본격 추리/성녀의 구제.jpg" class="img-fluid" alt="" style="display: block; margin: 0 auto;">
+            <div class="portfolio-info">
+              <h4>성녀의 구제</h4>
+              <p>독극물 밀실살인</p>
+              <p>완전범죄 심리전</p>
+              <a href="assets/img/works/본격 추리/성녀의 구제.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="성녀의 구제"><i class="bx bx-plus"></i></a>
+              <a href="https://product.kyobobook.co.kr/detail/S000001461106" class="details-link" title="More Details"><target="_blank"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/works/사회파/매스커레이드 호텔.jpg" class="img-fluid" alt="" style="display: block; margin: 0 auto;">
+            <div class="portfolio-info">
+              <h4>매스커레이드 호텔</h4>
+              <p>일반인 속에 숨은 범인을 찾아라</p>
+              <P>심리전형 수사극</P>
+              <a href="assets/img/works/사회파/매스커레이드 호텔.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="매스커레이드 호텔"><i class="bx bx-plus"></i></a>
+              <a href="https://product.kyobobook.co.kr/detail/S000001123523" class="details-link" title="More Details"><target="_blank"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/works/사회파/신참자.jpg" class="img-fluid" alt="" style="display: block; margin: 0 auto;">
+            <div class="portfolio-info">
+              <h4>신참자</h4>
+              <p>사람 사이의 거리와 진실을 파고드는 탐문극</p>
+              <P>가가 시리즈</P>
+              <a href="assets/img/works/사회파/신참자.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="매스커레이드 호텔 "><i class="bx bx-plus"></i></a>
+              <a href="https://product.kyobobook.co.kr/detail/S000001461116" class="details-link" title="More Details"><target="_blank"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/works/사회파/기린의 날개.jpg" class="img-fluid" alt="" style="display: block; margin: 0 auto;">
+            <div class="portfolio-info">
+              <h4>기린의 날개</h4>
+              <p>정의와 용서의 경계에서 발생하는 범죄</p>
+              <a href="assets/img/works/사회파/기린의 날개.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="기린의 날개"><i class="bx bx-plus"></i></a>
+              <a href="https://product.kyobobook.co.kr/detail/S000001461133" class="details-link" title="More Details"><target="_blank"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/works/감성/나미야 잡화점의 기적.jpg" class="img-fluid" alt="" style="display: block; margin: 0 auto;">
+            <div class="portfolio-info">
+              <h4>나미야 잡화점의 기적</h4> 
+              <p>시간여행</p>
+              <P>시간을 초월한 위로와 상담</P>
+              <a href="assets/img/works/감성/나미야 잡화점의 기적.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="나미야 잡화점의 기적"><i class="bx bx-plus"></i></a>
+              <a href="https://product.kyobobook.co.kr/detail/S000200550190" class="details-link" title="More Details"><target="_blank"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/works/감성/백야행.jpg" class="img-fluid" alt="" style="display: block; margin: 0 auto;">
+            <div class="portfolio-info">
+              <h4>백야행</h4> 
+              <p>사랑인가 집착인가</p>
+              <P>비밀을 공유한 소년과 소녀의 20년</P>
+              <a href="assets/img/works/감성/백야행.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="백야행"><i class="bx bx-plus"></i></a>
+              <a href="https://product.kyobobook.co.kr/detail/S000001461130" class="details-link" title="More Details"><target="_blank"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/works/감성/비밀.jpg" class="img-fluid" alt="" style="display: block; margin: 0 auto;">
+            <div class="portfolio-info">
+              <h4>비밀</h4> 
+              <p>죽은 부인의 영혼이 딸의 몸에 깃들다</p>
+              <P>신의 기적인가 저주인가</P>
+              <a href="assets/img/works/감성/비밀.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="비밀"><i class="bx bx-plus"></i></a>
+              <a href="https://product.kyobobook.co.kr/detail/S000001717345" class="details-link" title="More Details"><target="_blank"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- End Works Section -->
+
+    <!-- ======= Series Section ======= -->
+    <div id="journal" class="text-left paddsection">
+      <div class="container" data-aos="fade-up">
+        
+        <div class="section-title text-center">
+          <h2>Series</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="journal-block">
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+
+                <a href="탐정 갈릴레오 시리즈.html"><img src="assets/img/series/탐정 갈릴레오 시리즈/0. 유카와 마나부.jpg" class="img-responsive" alt="img" style="border: 1px solid #ccc; border-radius: 4px; padding: 2px;"></a>
+
+                <div class="journal-txt">
+
+                  <h4><a href="탐정 갈릴레오 시리즈.html">주인공: 유카와 마나부, 물리학자</a></h4>
+                  <p class="separator">과학 트릭 중심, 논리적 추리, 대학교수와 형사의 콤비수사
+                  </p>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+
+                <a href="형사 가가 시리즈.html"><img src="assets/img/series/형사 가가 시리즈/0. 가가 교이치로.jpg" class="img-responsive" alt="img" style="border: 1px solid #ccc; border-radius: 4px; padding: 2px;"></a>
+
+                <div class="journal-txt">
+
+                  <h4><a href="형사 가가 시리즈.html">주인공: 가가 교이치로, 정의감 넘치는 형사</a></h4>
+                  <p class="separator">인간 심리를 세밀하게 파고드는 탐문극
+                  </p>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+
+                <a href="매스커레이드 시리즈.html"><img src="assets/img/series/매스커레이드 시리즈/0. 닛타 고스케.jpg" class="img-responsive" alt="img" style="border: 1px solid #ccc; border-radius: 4px; padding: 2px;"></a>
+
+                <div class="journal-txt">
+
+                  <h4><a href="매스커레이드 시리즈.html">주인공: 닛타 고스케 & 야마기시 나오미</a></h4>
+                  <p class="separator">다중 인물심리극과 트릭 수사극
+                  </p>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <br/>
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+
+                <a href="라플라스 시리즈.html"><img src="assets/img/series/라플라스 시리즈/0. 사쿠라이 쇼 & 히로세 스즈.jpg" class="img-responsive" alt="img" style="border: 1px solid #ccc; border-radius: 4px; padding: 2px;"></a>
+
+                <div class="journal-txt">
+
+                  <h4><a href="라플라스 시리즈.html">주인공: 시라카와 아오이, 기억을 잃은 소녀</a></h4>
+                  <p class="separator">초능력 암시, 과학 미스터리, 불확실한 진실의 추적
+                  </p>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+
+                <a href="설산 시리즈.html"><img src="assets/img/series/설산 시리즈/0. 쿠리바야시 카즈유키.jpg" class="img-responsive" alt="img" style="border: 1px solid #ccc; border-radius: 4px; padding: 2px;"></a>
+
+                <div class="journal-txt">
+
+                  <h4><a href="설산 시리즈.html">주인공: 쿠리바야시 카즈유키, 의욕 없는 연구원</a></h4>
+                  <p class="separator">설산 밀실 추리, 생존과 진상 사이의 갈등, 인간적 허술함
+                  </p>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+
+                <a href="블랙 쇼맨 시리즈.html"><img src="assets/img/series/블랙 쇼맨 시리즈/0. 블랙 쇼맨 2025영화화.jpg" class="img-responsive" alt="img" style="border: 1px solid #ccc; border-radius: 4px; padding: 2px;"></a>
+
+                <div class="journal-txt">
+
+                  <h4><a href="블랙 쇼맨 시리즈.html">주인공: 가미오 다케시(블랙쇼맨) & 가미오 마요 </a></h4>
+                  <p class="separator">마술적 트릭, 비정통 탐정극, 2025년 영화화 예정
+                  </p>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div><!-- End Series Section -->
+
+    <!-- ======= History Section ======= -->
+    <section id="history" class="resume">
+      <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <br />
+        <h2>History</h2>
+        <p style="color: black;">히가시노 게이고는 이공계 출신이라는 독특한 이력과 치밀한 플롯으로 일본 추리문학계에서 독보적인 입지를 다진 작가입니다.<br /><br />
+        그의 대표작과 수상작, 그리고 대중적으로 큰 반향을 일으킨 주요 작품들을 연대순으로 정리했습니다.<br /><br />
+        전반기(1985~2005)는 데뷔와 수상 중심, 후반기(2005~2025)는 대중성 확대와 시리즈 전개 중심입니다.</p>
+      </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 class="resume-title">📘 데뷔 이전</h3>
+        <div class="resume-item">
+          <h4>1958 </h4>
+          <p><em>1958년 오사카 출생.</em></p>
+          <p><em>오사카부립대학 전기공학과를 졸업한 후, 회사원으로 재직 중 야간에 추리소설을 집필.  </em></p>
+        </div>
+ 
+        <h3 class="resume-title">📖 1985–2005 : 데뷔와 문학적 입지 확립</h3>
+
+            <div class="resume-item">
+              <h4 >1985 | 《방과 후》</h4>
+              <p><em>에도가와 란포상 수상. 고등학교를 배경으로 한 본격 추리물로 데뷔.</em></p>
+            </div>
+
+            <div class="resume-item">
+              <h4>1999 | 《비밀》</h4>
+              <p><em>일본추리작가협회상 수상. 감성과 SF적 요소를 결합한 독창적 감성 미스터리.</em></p>
+            </div>
+
+            <div class="resume-item">
+              <h4>1999 | 《백야행》</h4>
+              <p><em>‘살인 없는 살인극’으로 불리는 사회파 심리 미스터리 대표작.</em></p>
+            </div>
+
+            <div class="resume-item">
+              <h4>2003 | 《편지》</h4>
+              <p><em>범죄자의 가족을 다룬 사회파 문제작. 연극·영화화.</em></p>
+            </div>
+          </div>
+
+      <div class="col-lg-6">
+        <h3 class="resume-title">📚 2005–2025 : 대중성과 시리즈의 정착</h3>
+
+        <div class="resume-item">
+          <h4>2005 | 《용의자 X의 헌신》</h4>
+          <p><em>나오키상 수상. 갈릴레오 시리즈 대표작. 완전범죄를 철학적으로 탐구.</em></p>
+        </div>
+
+        <div class="resume-item">
+          <h4>2009 | 《신참자》</h4>
+          <p><em>가가 형사 시리즈 입문자용. 인간미 넘치는 수사극으로 드라마화.</em></p>
+        </div>
+
+        <div class="resume-item">
+          <h4>2012 | 《나미야 잡화점의 기적》</h4>
+          <p><em>서점대상 수상. 시대를 잇는 편지와 감동의 미스터리. 영화화.</em></p>
+        </div>
+
+        <div class="resume-item">
+          <h4>2015 | 《라플라스의 마녀》</h4>
+          <p><em>과학×추리의 융합. 영화화. 시리즈화의 시작.</em></p>
+        </div>
+
+        <div class="resume-item">
+          <h4>2018 | 《마력의 태동》</h4>
+          <p><em>청춘 심리 미스터리. 라플라스 세계관 확장.</em></p>
+        </div>
+
+        <div class="resume-item">
+          <h4>2023 | 《마녀와의 7일》</h4>
+          <p><em>라플라스 시리즈 3부작의 완결. 현대 청춘의 심리와 과학을 아우르는 최신작.</em></p>
+          </div>
+        </div>
+          
+        </div>
+
+      </div>
+    </section><!-- End History Section -->
+
+
+<!-- ======= Behind Section ======= -->
+<div id="contact" class="paddsection" style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="contact-block1">
+      <div class="row">
+
+        <!-- 좌측: 웹사이트 제작 계기 + 개인정보 -->
+        <div class="col-lg-6">
+          <div class="contact-contact">
+            <h2 class="mb-30">Comment</h2>
+            <p style="color: black;">저는 고등학생 시절, 선물로 받은 『편지』라는 책을 통해 처음으로 히가시노 게이고를 접하게 되었습니다.
+                그의 작품 세계에 점점 빠져들면서, 이 매력을 더 많은 사람들과 나누고 싶다는 마음이 들었고,
+                그렇게 이 웹사이트를 기획하게 되었습니다.<br/><br/>
+            기존 독자들에게는 다양한 분류 기준을 통해 새로운 가이드라인을 제시하고, 입문자들에게는 큐레이션을 통해 진입장벽을 낮추고자 했습니다.
+            히가시노 게이고의 작품을 처음 접하는 분들도, 오래된 팬들도 함께 즐길 수 있는 공간이 되길 바랍니다.
+            </p>
+        <br/>
+        <br/>
+            <h2 class="mb-30">Creator</h2>
+            <ul class="contact-details mt-4">
+              <li><span><strong>이름:</strong> 김찬용</span></li>
+              <li><span><strong>소속:</strong> 중앙대학교</span></li>
+              <br/>
+              <li><span><strong>연락처:</strong> 010-8438-3582</span></li>
+              <li><span><strong>이메일:</strong> vlek12345@cau.ac.kr</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 우측: 피드백 폼 -->
+        <div class="col-lg-6">
+          <form id="feedbackForm" method="post" role="form" class="php-email-form">
+            <div class="row gy-3">
+              <h2 class="mb-30">Feedback</h2>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="이름" required>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control" id="email" placeholder="이메일" required>
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+                <input type="text" class="form-control" name="favorite" placeholder="1. 가장 인상 깊게 읽은 작품은?" required>
+              </div>
+
+              <div class="col-lg-12">
+                <textarea class="form-control" name="reason" rows="2" placeholder="2. 그 작품이 인상 깊었던 이유는?" required></textarea>
+              </div>
+
+              <div class="col-lg-12">
+                <input type="text" class="form-control" name="path" placeholder="3. 히가시노 게이고 작품을 접한 경로는? (책, 영화, 지인추천 등)">
+              </div>
+
+              <div class="col-lg-12">
+                <input type="text" class="form-control" name="recommendation" placeholder="4. 추천하는 입문자용 작품이 있다면?">
+              </div>
+
+              <div class="col-lg-12">
+                <textarea class="form-control" name="want" rows="2" placeholder="5. 추가적으로 보고 싶은 콘텐츠가 있다면?"></textarea>
+              </div>
+
+              <div class="col-lg-12 mt-3 text-center">
+                <input type="submit" class="btn btn-defeault btn-send" value="피드백 제출">
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
   </div>
+</div><!-- End Behind Section -->
+
+<!-- ======= JS: 가짜 알림창 ======= -->
+<script>
+  document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert("소중한 피드백 감사합니다! 😊");
+    this.reset();
+  });
+</script>
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <div id="footer" class="text-center">
+    <div class="container">
+
+      <p>&copy; Template by Folio. All rights reserved.</p>
+      <p>Customized by Kim Chanyong, CAU.</p>
+
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+      -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+
+    </div>
+  </div><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
